@@ -30,9 +30,8 @@ switch (destino) {
         break;      
 }
 
-let pago = "si";
 
-pago = prompt("Si abonas con efectivo tenes un 10% de descuento. Si vas a abonar con efectivo responde: SI o NO").toLowerCase;
+let pago = prompt("Si abonas con efectivo tenes un 10% de descuento. Si vas a abonar con efectivo responde: SI o NO").toLowerCase;
 
 if (pago == "si"){
     console.log("Vas a abonar un 10% menos en efectivo");
