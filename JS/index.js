@@ -112,7 +112,7 @@ function tarjetaDestinos() {
         <img src="${destino.img}" class="card-img-top" alt="...">
         <div class="card-body">
           <h3 class="card-title">${destino.paquete}</h3>
-          <h3 class="card-title">Precio: usd ${destino.precio}</h3>
+          <p class="card-title">Precio: usd ${destino.precio}</p>
           <p class="card-text">Próxima salida: 20/04/2024.</p>
           <p class="card-text">Precios expresados en USD a la cotización del día del dolar oficial.</p>
           <button onclick="agregarAlCarrito(${destino.id}, '${destino.paquete}', ${destino.precio})" class="btn btn-primary">Agregar al carrito</button>

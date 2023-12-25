@@ -31,11 +31,11 @@ h2 {
 
 #cotizacion {
     display: flex !important;
-    align-items: center;
-    justify-content: center;
+    align-items: center !important;
+    justify-content: center !important;
     margin-top: 20px !important;
     color: black !important;
-    text-align: center;
+    text-align: center !important;
        
 }
 
@@ -58,21 +58,26 @@ h2 {
 
 #contenedorDestinos {
     display: flex !important;
-    align-items: center;
-    justify-content: space-between;
+    align-items: center !important;
+    justify-content: space-between !important;
     flex-wrap: wrap;
+    width: 50%;
 }
 
 #tarjetas {
     display: flex !important;
     align-items: center !important;
-    justify-content: center;
-}
+    justify-content: center !important;
+ }
 
 #travel {
     display: flex !important;
+       
 }
 
+#carrito {
+    width: 50%;
+}
 .btn {
     background-color: rgb(158, 200, 185) !important;
     color: black !important;
