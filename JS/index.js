@@ -27,10 +27,10 @@ setInterval(()=>{
     .then(response => response.json())
     .then(({blue,oficial,qatar})=>{
         COTIZACION.innerHTML = `
-        <h3>Tipos de cambio del día: </h3>
-        <p>Dolar Oficial: ${oficial}</p>
-        <p>Dolar Blue: ${blue}</p>
-        <p>Dolar Qatar: ${qatar}</p>
+        <p>Tipos de cambio del día: </p>
+        <p> -Dolar Oficial: ${oficial}</p> 
+        <p> -Dolar Blue: ${blue}</p> 
+        <p> -Dolar Qatar: ${qatar}</p>
         `
     })
     .catch(error => console.log(error))
@@ -108,12 +108,12 @@ function tarjetaDestinos() {
     ArrayDestinos.forEach(destino => {
         const DIV = document.createElement(`div`);
         DIV.className = "card";
-        DIV.innerHTML = `<div class="card" style="width: 22rem;">
+        DIV.innerHTML = `<div class="card" style="width: 20rem";>
         <img src="${destino.img}" class="card-img-top" alt="...">
         <div class="card-body">
           <h3 class="card-title">${destino.paquete}</h3>
-          <h3 class="card-title">${destino.precio}</h3>
-          <p class="card-text">Próxima salida el 20/04/2024.</p>
+          <h3 class="card-title">Precio: usd ${destino.precio}</h3>
+          <p class="card-text">Próxima salida: 20/04/2024.</p>
           <p class="card-text">Precios expresados en USD a la cotización del día del dolar oficial.</p>
           <button onclick="agregarAlCarrito(${destino.id}, '${destino.paquete}', ${destino.precio})" class="btn btn-primary">Agregar al carrito</button>
 

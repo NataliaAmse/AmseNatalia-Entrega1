@@ -1,20 +1,82 @@
-.card {
-    margin: 30px;
-    padding: 30px;
-    border: 1px solid rgb(184, 184, 184);
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    position: relative;
-    
+.navbar {
+    background-color: rgb(29, 112, 153) !important;
+    display: end !important;
+
+}
+
+body {
+    background-color: rgb(251, 255, 254) !important;
+}
+
+h1,
+h2 {
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+    color: rgb(27, 66, 66) !important;
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+}
+
+#promocion {
+    margin: 20px;
+    padding: 20px;
+    text-align: center !important;
+    justify-content: center !important;
+    align-items: center !important;
+    position: relative !important;
 }
 
 
 
+#cotizacion {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px !important;
+    color: black !important;
+    text-align: center;
+       
+}
+
+
+#card {
+    margin: 30px;
+    padding: 30px;
+    border: 1px solid rgb(184, 184, 184);
+    border-radius: 10px;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    position: relative;
+    width: 10%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border-bottom: 20px;
+
+}
+
+#contenedorDestinos {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#tarjetas {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center;
+}
+
+#travel {
+    display: flex !important;
+}
+
 .btn {
-    background-color: rgb(180, 180, 180) !important;
+    background-color: rgb(158, 200, 185) !important;
+    color: black !important;
+    border: none !important;
 }
 
 footer {
