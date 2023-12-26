@@ -113,7 +113,7 @@ function tarjetaDestinos() {
         <div class="card-body">
           <h3 class="card-title">${destino.paquete}</h3>
           <p class="card-title">Precio: usd ${destino.precio}</p>
-          <p class="card-text">Incluye 7 días en hotel 4 estrellas con desayuno buffet, traslados internos y 1 excursión diaria.</p>
+          <p class="card-text">Incluye 7 días en hotel 4 estrellas con desayuno buffet, traslados internos y una excursión diaria.</p>
           <p class="card-text">Próxima salida: 20/04/2024.</p>
           <p class="card-text">Precios expresados en USD a la cotización del día del dolar oficial.</p>
           <button onclick="agregarAlCarrito(${destino.id}, '${destino.paquete}', ${destino.precio})" class="btn btn-primary">Agregar al carrito</button>
