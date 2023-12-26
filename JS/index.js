@@ -65,8 +65,8 @@ function verCarrito() {
     CARRITO.forEach(item => {
         const LISTADO_DESTINOS = document.createElement('li');
         LISTADO_DESTINOS.innerHTML = `
-            <span>${item.paquete}</span>
-            <span>${item.precio}</span>
+            <span>${item.paquete}:</span>
+            <span>usd ${item.precio}</span>
             <button onclick="eliminarDelCarrito(${item.id})">Eliminar</button>
         `;
         VIAJES.appendChild(LISTADO_DESTINOS);
@@ -108,11 +108,12 @@ function tarjetaDestinos() {
     ArrayDestinos.forEach(destino => {
         const DIV = document.createElement(`div`);
         DIV.className = "card";
-        DIV.innerHTML = `<div class="card" style="width: 20rem";>
+        DIV.innerHTML = `<div class="card" style="width: 19rem";>
         <img src="${destino.img}" class="card-img-top" alt="...">
         <div class="card-body">
           <h3 class="card-title">${destino.paquete}</h3>
           <p class="card-title">Precio: usd ${destino.precio}</p>
+          <p class="card-text">Incluye 7 días en hotel 4 estrellas con desayuno buffet, traslados internos y 1 excursión diaria.</p>
           <p class="card-text">Próxima salida: 20/04/2024.</p>
           <p class="card-text">Precios expresados en USD a la cotización del día del dolar oficial.</p>
           <button onclick="agregarAlCarrito(${destino.id}, '${destino.paquete}', ${destino.precio})" class="btn btn-primary">Agregar al carrito</button>
